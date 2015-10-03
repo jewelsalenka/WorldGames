@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_hint"
+            android:padding="@dimen/settings_items_margin"
+            android:layout_margin="@dimen/settings_items_margin"
+            />
+    <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="textWebPassword"
+            android:hint="@string/pass_hint"
+            android:padding="@dimen/settings_items_margin"
+            android:layout_margin="@dimen/settings_items_margin"
+            />
+    <TextView
+            android:id="@+id/connection_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_inernet_connection"
+            android:layout_margin="@dimen/settings_items_margin"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            />
+    <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_button"
+            android:layout_margin="@dimen/settings_items_margin"
+            />
+
+</LinearLayout>
